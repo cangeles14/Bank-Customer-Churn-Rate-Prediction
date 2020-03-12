@@ -48,6 +48,10 @@ After cleaning and exploring the data, I focused on factors that may have the mo
 
 <img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/NumOfProducts.png" width="75%" height="75%">
 
+Correlation 
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CorrelationMaxtrix.png" width="75%" height="75%">
+
 ## Data Manipulation, Feature Engineering & Data Preprocessing
 
 ## Build Models
