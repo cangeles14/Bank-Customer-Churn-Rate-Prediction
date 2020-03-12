@@ -2,6 +2,14 @@
 
 ## Define The Problem
 
+Churn Rate is the rate of customer attrition in a company, or the speed at which a customer leaves your company. It’s more expensive to acquire a new customer than it is to retain a current one, therefore a small increase in customer retention equates to a large decrease in company costs, greatly benefiting a company.
+
+The objectives of this project is to:
+- Reduce Account Closure
+- Increase Customer / Service Ratio
+- Reduce Bank Service Transfer
+
+
 ## Get The Data
 
 - [Churn Prediction of Bank Customers](https://www.kaggle.com/sonalidasgupta95/churn-prediction-of-bank-customers#Churn_Modelling.csv)
