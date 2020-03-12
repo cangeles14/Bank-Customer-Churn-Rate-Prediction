@@ -10,13 +10,33 @@ The objectives of this project is to:
 - Reduce Bank Service Transfer
 
 
-## Get The Data
+## Roadmap
+
+- Gather data on customer behavior
+- Use the data to predict and segment customers who are likely to churn
+- Create models to demonstrate churn risk on company revenue
+- Design and implement intervention strategy on segmented customers
+- Repeat every fiscal year
+
+## Understand the Data
+
+The dataset used was provided by Kaggle.com
 
 - [Churn Prediction of Bank Customers](https://www.kaggle.com/sonalidasgupta95/churn-prediction-of-bank-customers#Churn_Modelling.csv)
 
-## Understand the Data/ Exploratory Analysis
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/Dataset.png" width="75%" height="75%">
 
-## Cleaning The Data
+After cleaning and exploring the data, I focused on factors that may have the most impact on Churn rate
+
+- Number of Products
+- Age
+- Credit Score
+- Tenure
+- Has a Credit Card
+
+## Exploratory Analysis
+
+
 
 ## Data Manipulation, Feature Engineering & Data Preprocessing
 
