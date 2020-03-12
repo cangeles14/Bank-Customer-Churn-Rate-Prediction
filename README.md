@@ -36,7 +36,17 @@ After cleaning and exploring the data, I focused on factors that may have the mo
 
 ## Exploratory Analysis
 
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/AgeDistribution.png" width="75%" height="75%">
 
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CreditCard.png" width="75%" height="75%">
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CreditScore.png" width="75%" height="75%">
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CustomerChurnPercentage.png" width="75%" height="75%">
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/DataDemographic.png" width="75%" height="75%">
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/NumOfProducts.png" width="75%" height="75%">
 
 ## Data Manipulation, Feature Engineering & Data Preprocessing
 
