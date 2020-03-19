@@ -118,7 +118,7 @@ Step 3: Target those most likely in efforts to reduce likelihood of withdrawal t
 
 Step 4: Implement strategy, continue to collect data, and revisit model next fiscal year
 
-## Presenation
+## Presentation
 
 If you would like to know more please take a look at the presentation.
 
