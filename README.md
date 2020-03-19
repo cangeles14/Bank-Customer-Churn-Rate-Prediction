@@ -85,11 +85,28 @@ For this prediction model I used CatBoost or Categorical Boost. It is a machine 
 
 To start, I created a train/text split on 1/3 of my dataset.
 
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CatBoostModel.png" width="50%" height="50%">
+
 Catboost allows the use of categorical variables to not be dummied, as long as you declare which variables are, in fact, categorical.
 
-One of catboost's more notable features is its ability to optimize one metric through running multiple iterations on the same model. 
+One of catboost's more notable features is its ability to optimize one metric through running multiple iterations on the same model. Here I focused on optimizing recall score. I will go more into why I chose recall in the metric section, but recall tells us how accurate is our true positive prediction. It can be seen as answering the question "When it is actually the positive result, how often does it predict correctly?".
 
 ## Model Performance & Metrics
+
+Testing, and optimizing a machine learning model is just as important as making one. If the model makes wrong predictions, is overfitted, underfitted, or simply has very low prediction accuracy, it can provide false information. Not good. 
+
+One metric for testing if a prediction model is making accurate predictions is the confusion matrix.
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/confusionmatrix_example.png" width="50%" height="50%">
+
+Here we can see how well our prediction model works. By comparing our predicted results with the actual results in our dataset, we are able to test our model on how well its predicting the churn rate of a customer.
+
+
+Let's take a closer look at our metrics and give it a real example. If we use our model to predict a new customer, and it predicts that this customer won't churn any time soon. This customer is happy. Now let's say that this prediction was incorrect, we can say that it was a False Negative prediction. Meaning, the customer was "negative" ( or not going to churn), but our prediction was false, meaning they DID in fact, churn. We can take this as the worse cast scenario. We could have prevented this customer from churning, but our model predicted incorrectly.
+
+Since we know our "worst case scenario" metric, which is false negative (FN), we can optimize our model to reduce this error, even at the cost of lower accuracy or lower false positives. To do this we can set our CatBoost model to optimize the models Recall score, thus lowering our FN score as much as possible.
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/confusionmatrix_actual.png" width="50%" height="50%">
 
 ## Built With
 
