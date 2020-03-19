@@ -34,25 +34,46 @@ After cleaning and exploring the data, I focused on factors that may have the mo
 - Tenure
 - Has a Credit Card
 
+## Data Manipulation, Feature Engineering & Data Preprocessing
+
+Before we can start the exploration and analysis of our data we need to make sure our data is showing what we want and when analyzed, we are extracting insightful information, and not misinformation.
+
+To do this, I turned some numberical variables into categorical ones. This will allow me to visualize how this variable correlates to churn rate.
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CategoricalData.png" width="30%" height="30%">
+
+A good tip when working with both categorical and numerical data is to group your categorical and numerical variables into two distinct lists. This will help when you want to run analysis on just that data type and will greatly help down the pipeline when you need to process or manipulate your data.
+
+
+
+
 ## Exploratory Analysis
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/AgeDistribution.png" width="75%" height="75%">
+Lets have a look at some simple demographics of our dataset.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CreditCard.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CustomerChurnPercentage.png" width="50%" height="50%">
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CreditScore.png" width="75%" height="75%">
+It looks like our dataset has 80% customers that havent churned, and 20% that have. This is good to know if our dataset is biased and will allow us to know if we can extract some meaningful data insights from it. It will also let us know how we will proceed with a prediction model as we will want to train our model on all types of real life examples.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CustomerChurnPercentage.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/AgeDistribution.png" width="50%" height="50%">
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/DataDemographic.png" width="75%" height="75%">
+While looking at some of the data, we can see that the age distribution is not normally distributed, which is expected. This allows us to understand that we will need to normalize this data before we construct our prediction model.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/NumOfProducts.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/DataDemographic.png" width="50%" height="50%">
 
-Correlation 
+Here we see the number of customers that churned by region. France has a lower churn rate compared to Germany and Spain, with Germany having the most customers who churned.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CorrelationMaxtrix.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CreditCard.png" width="50%" height="50%">
 
-## Data Manipulation, Feature Engineering & Data Preprocessing
+Here we can see the percent churn rate in correlation with the customers possession of a credit card service. We can see that having a credit card has no impact on weather or not a customer is more likely to churn.
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/NumOfProducts.png" width="50%" height="50%">
+
+Lastly, the most insightful visualization is the rate of churn on the number of services or products that are offered. We can see that customers that have 3+ products are churning, as we see very few customers that have 3 or 4 products are staying with the bank.
+
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CorrelationMaxtrix.png" width="50%" height="50%">
+
+Lastly, knowing the correlations between your data variables can give many insights from allowing you to dig deeper into one variable or to know if you have strong correlations to avoid. This will also help when building a prediction model as we do not want to overfit our model.
 
 ## Build Models
 
