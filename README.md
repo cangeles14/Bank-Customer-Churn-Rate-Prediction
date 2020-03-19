@@ -106,7 +106,17 @@ Let's take a closer look at our metrics and give it a real example. If we use ou
 
 Since we know our "worst case scenario" metric, which is false negative (FN), we can optimize our model to reduce this error, even at the cost of lower accuracy or lower false positives. To do this we can set our CatBoost model to optimize the models Recall score, thus lowering our FN score as much as possible.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/confusionmatrix_actual.png" width="50%" height="50%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/cfmatrix.png" width="50%" height="50%">
+
+## Proceeding With a Strategy
+
+Step 1: Explore the data to see what most effects customer churn rate and categorize what contributes to churn
+
+Step 2: Use the prediction model to predict new or active customers likelihood of withdrawal or churn at the bank
+
+Step 3: Target those most likely in efforts to reduce likelihood of withdrawal through proposed marketing strategies, including promotions or sales for select customers via email or phone calls
+
+Step 4: Implement strategy, continue to collect data, and revisit model next fiscal year
 
 ## Built With
 
