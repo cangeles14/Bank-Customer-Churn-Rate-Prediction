@@ -199,7 +199,7 @@ plt.figure()
 plt.plot(fpr,tpr,label=f'Model CatBoost (area={model_CB_roc})')
 plt.plot([0,1], [0,1])
 plt.legend()
-plt.show
+plt.savefig('Catboost Model', dpi=600)
     
 accuracy_score(y_test,preds_class)
 recall_score(y_test,preds_class)
