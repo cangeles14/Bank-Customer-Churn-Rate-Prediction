@@ -51,7 +51,7 @@ A good tip when working with both categorical and numerical data is to group you
 
 Lets have a look at some simple demographics of our dataset.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CustomerChurnPercentage.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CustomerChurnPercentage.png" width="50%" height="50%">
 
 It looks like our dataset has 80% customers that havent churned, and 20% that have. This is good to know if our dataset is biased and will allow us to know if we can extract some meaningful data insights from it. It will also let us know how we will proceed with a prediction model as we will want to train our model on all types of real life examples.
 
