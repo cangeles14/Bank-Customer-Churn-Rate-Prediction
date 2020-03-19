@@ -44,7 +44,7 @@ To do this, I turned some numberical variables into categorical ones. This will 
 
 A good tip when working with both categorical and numerical data is to group your categorical and numerical variables into two distinct lists. This will help when you want to run analysis on just that data type and will greatly help down the pipeline when you need to process or manipulate your data.
 
-
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CatNumCols.png" width="75%" height="75%">
 
 
 ## Exploratory Analysis
@@ -75,7 +75,19 @@ Lastly, the most insightful visualization is the rate of churn on the number of 
 
 Lastly, knowing the correlations between your data variables can give many insights from allowing you to dig deeper into one variable or to know if you have strong correlations to avoid. This will also help when building a prediction model as we do not want to overfit our model.
 
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/VIFMultic.png" width="50%" height="50%">
+
+Variance inflation factor (VIF) provides a measurement on how much variance increases due to collinearity. We want to keep our multicollinearity as low as possible for when we are building a prediction model. What multicollinearity does is that it will make the estimatation of our model highly unstable. What this means is that if there is a small or slight change in one variable, it can create a large change in another and in our predictions.
+
 ## Build Models
+
+For this prediction model I used CatBoost or Categorical Boost. It is a machine learning algorithm that works by converting categorical values to numerical ones based on statistical combinations. You can read more about this algorithm in the link below.
+
+To start, I created a train/text split on 1/3 of my dataset.
+
+Catboost allows the use of categorical variables to not be dummied, as long as you declare which variables are, in fact, categorical.
+
+One of catboost's more notable features is its ability to optimize one metric through running multiple iterations on the same model. 
 
 ## Model Performance & Metrics
 
@@ -86,6 +98,7 @@ Lastly, knowing the correlations between your data variables can give many insig
 * [MySQL](https://www.mysql.com/) -  MySQL is an open-source relational database management system for SQL
 * [Tableau](https://www.tableau.com/) - Popular Data visualization tool
 * [MatPlotLib](https://matplotlib.org/contents.html) - Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms
+* [CatBoost](https://catboost.ai/) - CatBoost is a high-performance open source library for gradient boosting on decision trees
 
 ## Authors
 
