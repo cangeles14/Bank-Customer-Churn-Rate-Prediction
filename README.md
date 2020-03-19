@@ -85,7 +85,7 @@ For this prediction model I used CatBoost or Categorical Boost. It is a machine 
 
 To start, I created a train/text split on 1/3 of my dataset.
 
-<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CatBoostModel.png" width="75%" height="75%">
+<img src="https://github.com/cangeles14/Bank-Customer-Churn-Rate-Prediction/blob/master/images/CatBoostModel.png" width="85%" height="85%">
 
 Catboost allows the use of categorical variables to not be dummied, as long as you declare which variables are, in fact, categorical.
 
